@@ -19,6 +19,7 @@ async function releaseInVerdaccio() {
   spinner.start("Versioning and Publishing packages to local registry")
   const { stdout: actualBranch } = await exec("git rev-parse --abbrev-ref HEAD")
 
+  // TODO
   await exec(
     `npx lerna publish patch --force-publish --no-git-tag-version --no-private --no-push --yes --allow-branch ${actualBranch} --registry="http://0.0.0.0:4873"`
   )

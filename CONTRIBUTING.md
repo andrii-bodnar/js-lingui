@@ -137,9 +137,8 @@ Please make sure that all tests pass and linter doesn't report any error before 
 
 - `yarn lint:all` - Linting & Type testing
 - `yarn test` - Quick test suite (sufficient)
-- `yarn release:test` - Full test suite (recommended)
-
-`yarn release:test` builds all packages, simulates creating packages for NPM, runs unit tests and finally runs integration tests using production build.
+- `yarn release:build` - Build all packages (recommended)
+- `yarn test:all` - Full test suite (recommended)
 
 Now you can create PR and let CI service do their work!
 
