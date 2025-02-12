@@ -1,10 +1,12 @@
 # Change Log
 
+## 5.2.1
+
 ## [5.2.0](https://github.com/lingui/js-lingui/compare/v5.1.2...v5.2.0) (2025-01-31)
 
 ### Bug Fixes
 
-* don't use anything from "@babel/types" in runtime ([#2132](https://github.com/lingui/js-lingui/issues/2132)) ([7ebb88d](https://github.com/lingui/js-lingui/commit/7ebb88dc79846839e0826d073cc0d830c09dda27))
+- don't use anything from "@babel/types" in runtime ([#2132](https://github.com/lingui/js-lingui/issues/2132)) ([7ebb88d](https://github.com/lingui/js-lingui/commit/7ebb88dc79846839e0826d073cc0d830c09dda27))
 
 ## [5.1.2](https://github.com/lingui/js-lingui/compare/v5.1.1...v5.1.2) (2024-12-16)
 

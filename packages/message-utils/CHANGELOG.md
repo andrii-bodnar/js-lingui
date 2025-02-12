@@ -1,10 +1,12 @@
 # Change Log
 
+## 5.2.1
+
 ## [5.2.0](https://github.com/lingui/js-lingui/compare/v5.1.2...v5.2.0) (2025-01-31)
 
 ### Features
 
-* support short/default/long/full date time formats ([#2117](https://github.com/lingui/js-lingui/issues/2117)) ([8020427](https://github.com/lingui/js-lingui/commit/802042743c60e28d62571a4b08437a7b275c8237))
+- support short/default/long/full date time formats ([#2117](https://github.com/lingui/js-lingui/issues/2117)) ([8020427](https://github.com/lingui/js-lingui/commit/802042743c60e28d62571a4b08437a7b275c8237))
 
 ## [5.1.2](https://github.com/lingui/js-lingui/compare/v5.1.1...v5.1.2) (2024-12-16)
 
