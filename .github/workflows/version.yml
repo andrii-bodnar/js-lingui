@@ -33,5 +33,6 @@ jobs:
         with:
           version: yarn version:${{github.event.inputs.tag}}
           createGithubReleases: false
+          commit: "chore(release): bump version"
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
