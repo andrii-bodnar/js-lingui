@@ -1,16 +1,11 @@
 name: Version
 
 on:
-  workflow_dispatch:
-    inputs:
-      tag:
-        type: choice
-        description: 'Tag to release'
-        options:
-          - latest
-          - next
-        required: true
-        default: "latest"
+  push:
+    branches:
+      - main
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   release:
@@ -34,9 +29,11 @@ jobs:
       - name: Create Release Pull Request
         uses: changesets/action@v1
         with:
-          version: yarn version:${{github.event.inputs.tag}}
-          createGithubReleases: false
+          version: yarn version:latest
+          publish: yarn release:build && yarn release:latest
+          createGithubReleases: true
           commit: "chore(release): bump version [skip ci]"
           title: "chore(release): bump version"
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
