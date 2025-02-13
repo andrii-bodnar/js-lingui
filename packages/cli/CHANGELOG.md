@@ -1,10 +1,24 @@
 # Change Log
 
+## 5.2.1
+
+### Patch Changes
+
+- [`f13dc25`](https://github.com/andrii-bodnar/js-lingui/commit/f13dc2566ef1f83b62e7e4a998b5bc48f7efda86) Thanks [@andrii-bodnar](https://github.com/andrii-bodnar)! - Test changeset
+
+- Updated dependencies []:
+  - @lingui/babel-plugin-extract-messages@5.2.1
+  - @lingui/babel-plugin-lingui-macro@5.2.1
+  - @lingui/conf@5.2.1
+  - @lingui/core@5.2.1
+  - @lingui/format-po@5.2.1
+  - @lingui/message-utils@5.2.1
+
 ## [5.2.0](https://github.com/lingui/js-lingui/compare/v5.1.2...v5.2.0) (2025-01-31)
 
 ### Bug Fixes
 
-* Allow empty translations for pseudo locale in compile --strict ([#2129](https://github.com/lingui/js-lingui/issues/2129)) ([8cae5e0](https://github.com/lingui/js-lingui/commit/8cae5e0e5a4ab0ab9406aa1683b60a4796c2d9f2))
+- Allow empty translations for pseudo locale in compile --strict ([#2129](https://github.com/lingui/js-lingui/issues/2129)) ([8cae5e0](https://github.com/lingui/js-lingui/commit/8cae5e0e5a4ab0ab9406aa1683b60a4796c2d9f2))
 
 ## [5.1.2](https://github.com/lingui/js-lingui/compare/v5.1.1...v5.1.2) (2024-12-16)
 

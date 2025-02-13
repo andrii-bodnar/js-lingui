@@ -1,10 +1,18 @@
 # Change Log
 
+## 5.2.1
+
+### Patch Changes
+
+- Updated dependencies [[`f13dc25`](https://github.com/andrii-bodnar/js-lingui/commit/f13dc2566ef1f83b62e7e4a998b5bc48f7efda86)]:
+  - @lingui/cli@5.2.1
+  - @lingui/conf@5.2.1
+
 ## [5.2.0](https://github.com/lingui/js-lingui/compare/v5.1.2...v5.2.0) (2025-01-31)
 
 ### Features
 
-* add meaningful error when locale is not set ([#2131](https://github.com/lingui/js-lingui/issues/2131)) ([5ae8363](https://github.com/lingui/js-lingui/commit/5ae83630c5afe866b23c5739286eb09fdfe39b95))
+- add meaningful error when locale is not set ([#2131](https://github.com/lingui/js-lingui/issues/2131)) ([5ae8363](https://github.com/lingui/js-lingui/commit/5ae83630c5afe866b23c5739286eb09fdfe39b95))
 
 ## [5.1.1](https://github.com/lingui/js-lingui/compare/v5.1.1...v5.1.2) (2024-12-16)
 
