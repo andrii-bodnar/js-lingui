@@ -1,11 +1,11 @@
-name: Version
+name: Publish Packages
 
 on:
   workflow_dispatch:
     inputs:
       tag:
         type: choice
-        description: 'Tag to release'
+        description: 'NPM tag to release'
         options:
           - latest
           - next
@@ -13,8 +13,7 @@ on:
         default: "latest"
 
 jobs:
-  release:
-    name: Version
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -29,14 +28,22 @@ jobs:
           scope: '@lingui'
 
       - name: Install dependencies
-        run: yarn
+        run: yarn install
 
-      - name: Create Release Pull Request
+      - name: Build packages
+        run: yarn release:build
+
+      - name: Unit Testing
+        run: yarn test:ci
+
+      - name: Linting & Types
+        run: yarn lint:all
+
+      - name: Create Release
         uses: changesets/action@v1
         with:
-          version: yarn version:${{github.event.inputs.tag}}
-          createGithubReleases: false
-          commit: "chore(release): bump version [skip ci]"
-          title: "chore(release): bump version"
+          publish: yarn release:${{github.event.inputs.tag}}
+          createGithubReleases: true
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
