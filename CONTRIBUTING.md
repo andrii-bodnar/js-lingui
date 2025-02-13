@@ -140,13 +140,13 @@ Please make sure that all tests pass and linter doesn't report any error before 
 - `yarn release:build` - Build all packages (recommended)
 - `yarn test:all` - Full test suite (recommended)
 
-This project uses [changesets](https://github.com/changesets/changesets) to manage versioning and changelogs. If you're adding a new feature or fixing a bug, please create a new changeset:
+This project uses [changesets](https://github.com/changesets/changesets) to manage versioning and changelogs. If you're adding a new feature or fixing a bug, be sure to add a changeset that will describe the changes to users. Documentation-only and non-package changes do not need changesets.
 
 ```sh
 yarn changeset
 ```
 
-This command will guide you through the process of creating a new changeset. After you've created a changeset, you can commit it to your branch.
+The command above will guide you through the process of creating a new changeset. After you've created a changeset, you can commit it to your branch.
 
 > **Note**
 > This project uses the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification for commit messages and PR titles.
