@@ -1,5 +1,13 @@
 # Change Log
 
+## 5.2.1
+
+### Patch Changes
+
+- Updated dependencies [[`f13dc25`](https://github.com/andrii-bodnar/js-lingui/commit/f13dc2566ef1f83b62e7e4a998b5bc48f7efda86)]:
+  - @lingui/cli@5.2.1
+  - @lingui/conf@5.2.1
+
 ## [5.2.0](https://github.com/lingui/js-lingui/compare/v5.1.2...v5.2.0) (2025-01-31)
 
 **Note:** Version bump only for package @lingui/extractor-vue
